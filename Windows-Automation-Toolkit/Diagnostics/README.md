@@ -128,3 +128,15 @@ This script is designed to rapidly diagnose and proactively address common cause
 | Usage Instructions | 1. Download and save the script (e.g., to C:\scripts\Get-DiskSpaceAlert.ps1). 2. Open PowerShell as an Administrator. 3. Run the script to view the current disk status. 4. The output will display the disk size and free space in GB for easy readability. |
 
 **********************************************************************************************************
+
+# Script: Analyze-StartupTime.ps1
+
+| Section | Content |
+|---|---|
+| Script Title | Analyze-StartupTime.ps1 |
+| Description | This diagnostic script queries the Windows Event Log to retrieve historical startup and shutdown data. It is essential for calculating system downtime and identifying if reboots were intentional or caused by system crashes. |
+| Features | ***Startup Tracking:** Identifies when the Event Log service started (Event ID 6005). ***Shutdown Analysis:** Differentiates between clean shutdowns (6006) and unexpected power losses (6008).  ***Performance Insight:** Helps track downtime duration between boot and shutdown events. |
+| Usage Instructions | 1. Run PowerShell as Administrator. 2. Execute: .\Analyze-StartupTime.ps1|
+
+**********************************************************************************************************
+
