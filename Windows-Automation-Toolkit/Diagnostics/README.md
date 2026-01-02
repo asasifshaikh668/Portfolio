@@ -84,3 +84,47 @@ This script is designed to rapidly diagnose and proactively address common cause
 
 
 ******************************************************************************************************
+
+# Script: Get-RecentEventErrors.ps1
+
+| Section | Content |
+|---|---|
+| Script Title | Get-RecentEventErrors.ps1 |
+| Description | This script is a diagnostic tool designed for Senior Digital IT Engineers to maintain system health and security. It automates the retrieval of high-priority logs, specifically targeting the last 50 Critical and Error events from both System and Application logs within a 24-hour window. This proactive approach helps in identifying hardware health issues and software conflicts before they escalate into global support outages. |
+| Features | ***Proactive Diagnostics:** Quickly identifies system-level failures and application crashes. ***Searchable Technical Skills:** Demonstrates advanced use of PowerShell for infrastructure monitoring and tooling automation. ***Operational Efficiency:** Reduces manual log checking, allowing engineers to focus on high-value remediation tasks. |
+| Usage | 1. Run PowerShell as Administrator. 2. Execute the script: .\Get-RecentEventErrors.ps1 3. The output provides a structured table of recent critical incidents for rapid analysis |
+
+********************************************************************************************************
+
+# Script: Test-RemoteConnectivity.ps1
+
+| Section | Content |
+|---|---|
+| Script Title | Test-RemoteConnectivity.ps1 |
+| Description | This script provides a streamlined way to verify network reachability and essential service availability on a target machine. It serves as a handy template for routine network administration tasks. It prompts the user for a hostname or IP address and performs a sequential test of ICMP ping and common TCP ports used in enterprise environments. |
+| Features | ***Interactive Prompts:** Easily input the target destination during execution. ***Multi-Port Verification:** Automatically checks for: ***Ping:** Basic ICMP reachability. ***Web:** HTTP (80) and HTTPS (443) connectivity. ***Remote Desktop** RDP (3389) availability.  ***Standardized Output:** Displays results in a clean, readable table format. |
+| Usage Instructions | 1. Open PowerShell with appropriate permissions. 2. Navigate to the script directory and run: .\Test-RemoteConnectivity.ps1 3. Enter the **Hostname** or **IP Address** when prompted. |
+
+********************************************************************************************************
+
+# Script: Reset-PrintSpooler.ps1 / .bat
+
+| Section | Content |
+|---|---|
+| Script Title | Reset-PrintSpooler.ps1 / .bat |
+| Description | This utility provides a one-click solution to resolve common printing issues on Windows systems. It identifies and clears stuck print jobs by resetting the local Print Spooler service and purging its temporary cache folder. |
+| Features | ***Service Management:** Automatically stops and restarts the spooler service to release file locks. ***Cache Cleanup:** ermanently deletes all temporary .shd and .spl files located in the System32\spool\PRINTERS directory.  ***Multi-Format Support:** Available in both PowerShell and Batch formats for flexible deployment. |
+| Usage Instructions | 1. Locate the script file (either .ps1 or .bat). 2. **Important:** You must run the script with **Administrator privileges** to modify system services. 3. Execute the file and wait for the confirmation that the spooler has restarted. |
+
+**********************************************************************************************************
+
+# Script: Get-DiskSpaceAlert.ps1
+
+| Section | Content |
+|---|---|
+| Script Title | Get-DiskSpaceAlert.ps1 |
+| Description | This script is a proactive monitoring tool designed to check available disk space on Windows devices. It identifies if a specific drive, such as the C: drive, has fallen below a predefined storage threshold. By providing early warnings, it helps administrators prevent system performance issues caused by insufficient disk capacity. |
+| Features | ***Storage Monitoring:** Retrieves real-time free and used disk space data for targeted volumes. ***Threshold Alerts:** Compares available space against a required amount to determine if enough storage exists.  ***Automated Reporting:** Can be executed via central management consoles or local scripts to monitor multiple endpoints. |
+| Usage Instructions | 1. Download and save the script (e.g., to C:\scripts\Get-DiskSpaceAlert.ps1). 2. Open PowerShell as an Administrator. 3. Run the script to view the current disk status. 4. The output will display the disk size and free space in GB for easy readability. |
+
+**********************************************************************************************************
